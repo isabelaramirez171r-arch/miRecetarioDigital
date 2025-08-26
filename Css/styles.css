@@ -1,0 +1,224 @@
+/* 🌟 Fuente y estilos generales */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* 🌟 Navbar */
+.navbar {
+  background: #ff6f61;
+  padding: 15px 0;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  color: #ffe082;
+}
+
+/* 🌟 Hero */
+.hero {
+  height: 90vh;
+  background: url('imagenes/hero.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero__content {
+  max-width: 700px;
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.hero__content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero__content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #ff6f61;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff3d2f;
+}
+
+.btn-primary {
+  background: #4caf50;
+}
+
+.btn-primary:hover {
+  background: #388e3c;
+}
+
+/* 🌟 Carrusel */
+.swiper {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 40px;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.receta-info {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 350px;
+}
+
+.receta-info h2 {
+  margin-bottom: 10px;
+}
+
+.receta-info button {
+  background: #ff6f61;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.receta-info button:hover {
+  background: #ff3d2f;
+}
+
+/* 🌟 Últimas Recetas */
+.recetas-section {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.recetas-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.recetas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.receta-card {
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.receta-card:hover {
+  transform: translateY(-5px);
+}
+
+.receta-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.receta-card h3 {
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+/* 🌟 Nosotros */
+.about {
+  padding: 60px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* 🌟 Footer */
+.site-footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
